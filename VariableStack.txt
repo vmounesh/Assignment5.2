@@ -1,0 +1,33 @@
+package myPack;
+
+public class VariableStack implements Stack{
+	
+	int size;
+	int I;
+	
+	public VariableStack (int size){
+		this.size=size;
+	}
+
+	@Override
+	public void push(int I) {
+		
+		if(size>10)
+		{
+			I+=size;
+			System.out.println("Stack accomadated: " +I);
+		}
+		else
+		
+		System.out.println("Not a Stack accomadated "  +size);
+		
+	}
+
+	@Override
+	public int pop() {
+		
+		return 0;
+	}
+	
+
+}

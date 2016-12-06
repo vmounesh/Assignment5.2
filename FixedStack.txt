@@ -1,0 +1,31 @@
+package myPack;
+
+import java.util.Scanner;
+
+public class FixedStack implements Stack{
+	int size;
+	
+	public FixedStack (int size){
+		this.size=size;
+	}
+	
+	public int pop() {
+		
+		if(size>10)
+		{
+			System.out.println("Stack overflow");
+		}
+		else
+		
+		System.out.println("Not a Stackoverflow "  +size);
+		return 0;
+	}
+
+	@Override
+	public void push(int I) {
+	
+		
+	}
+	
+
+}

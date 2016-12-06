@@ -1,0 +1,19 @@
+package myPack;
+
+import java.util.Scanner;
+
+public class TestInterface {
+	
+	
+	public static void main(String[] args) {
+		
+		Scanner s= new Scanner(System.in);
+		System.out.println("enter the value of size");
+		int size =s.nextInt();			
+		//FixedStack f = new FixedStack(size);
+		//sf.pop();
+		VariableStack v= new VariableStack(size);
+		v.push(size);
+	}
+	
+}
